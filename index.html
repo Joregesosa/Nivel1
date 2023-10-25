@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <script src="main.js" defer type="module"></script> -->
+    <script src="main.js" defer type="module"></script>
     <link rel="stylesheet" href="./css/main.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="container">
+      
       <header class="mainHeader">
         <nav class="mainNav">
           <ul>
@@ -22,15 +23,16 @@
       <div class="formContainer">
         <form>
           <h2>Area de un triangulo</h2>
+          
           <div>
-            <label for="">Base</label>
-            <input type="text" />
+            <label for="base">Base</label>
+            <input type="text" id="base" name="base" value="0"/>
           </div>
           <div>
-            <label for="">Altura</label>
-            <input type="text" />
+            <label for="altura">Altura</label>
+            <input type="text" id="altura" name="altura" value="0"/>
           </div>
-          <button>Calcular</button>
+          <button id="calcularAreaTriangulo">Calcular</button>
         </form>
       </div>
 

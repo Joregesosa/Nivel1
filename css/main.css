@@ -80,7 +80,7 @@
 }
 
 .formContainer > form > div > input{
-
+    padding-left: 8px;
     height: 25px;
     width: 240px;
     border: none;
@@ -90,4 +90,9 @@
     box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
 
 
+}
+
+.formContainer > form > div > .esDiez{
+ 
+   border: solid red 2px;
 }
