@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: papayawhip;
+}
+
+.mainHeader{
+    width: 100%;
+    height: 60px;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
+}
+
+.mainNav{
+    width: 70%;
+    height: 100%;
+ 
+}
+
+.mainNav > ul{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+ 
+    list-style: none;
+  
+}
+
+ .divPadre{
+    width: 400px;
+    height: 400px;
+    border: solid 2px red;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+ }
+.divHijo{
+    width: 100px;
+    height: 100px;
+    border: solid 2px red;
+}
+
+.formContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+ 
+}
+
+.formContainer > form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 40%;
+    min-width: 280px;
+    height: fit-content;
+    padding: 2cqmin;
+    gap: 20px;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+     
+
+}
+
+.formContainer > form > div{
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.formContainer > form > div > input{
+
+    height: 25px;
+    width: 240px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: rgba(139, 218, 249, 0.479);
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
+
+
+}
