@@ -13,12 +13,15 @@ export function areaDeUnRectangulo(base, altura) {
     return result;
 }
 
-export function esDiez(input) {
+export function esCero(input) {
     let value = parseInt(input.value);
-
+ 
     if (value === 0) {
         input.classList.add('esDiez');
+     
     }else{
         input.classList.remove('esDiez');
     }
 }
+
+ 

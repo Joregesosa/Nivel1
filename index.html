@@ -9,11 +9,10 @@
   </head>
   <body>
     <div class="container">
-      
       <header class="mainHeader">
         <nav class="mainNav">
-          <ul>
-            <li>Area de un Cuadrado</li>
+          <ul id="options">
+            <li class="active">Area de un Cuadrado</li>
             <li>Area de un Triangulo</li>
             <li>Area de un Rectangulo</li>
           </ul>
@@ -23,19 +22,19 @@
       <div class="formContainer">
         <form>
           <h2>Area de un triangulo</h2>
-          
+
           <div>
             <label for="base">Base</label>
-            <input type="text" id="base" name="base" value="0"/>
+            <input type="text" id="base" name="base" value="0" />
           </div>
           <div>
-            <label for="altura">Altura</label>
-            <input type="text" id="altura" name="altura" value="0"/>
+            <label for="altura" id="lbl">Altura</label>
+            <input type="text" id="altura" name="altura" value="0" />
           </div>
-          <button id="calcularAreaTriangulo">Calcular</button>
+          <button id="calcularAreaTriangulo" >Calcular</button>
+          <input type="button" value="HOla Mundo">
         </form>
       </div>
-
     </div>
   </body>
 </html>

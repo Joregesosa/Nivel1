@@ -59,8 +59,9 @@
 
 .formContainer > form{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 40%;
     min-width: 280px;
     height: fit-content;
@@ -95,4 +96,10 @@
 .formContainer > form > div > .esDiez{
  
    border: solid red 2px;
+}
+
+.active {
+   background: rgba(14, 183, 255, 0.84);
+   padding: 2px 8px;
+   border-radius: 10px;
 }

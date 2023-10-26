@@ -1,15 +1,16 @@
-import {areaDeUnCuadrado, areaDeUnTriangulo, areaDeUnRectangulo, esDiez} from './utilities.js';
+import { areaDeUnCuadrado, areaDeUnTriangulo, areaDeUnRectangulo, esCero } from './utilities.js';
 const base = document.querySelector('#base');
 const altura = document.querySelector('#altura');
+const lbl = document.querySelector('#lbl');
 const calcularAreaTriangulo = document.querySelector('#calcularAreaTriangulo');
-
-
-
-
-
+const options = [...document.querySelectorAll('#options li')];
 base.addEventListener('input', runnApp)
 altura.addEventListener('input', runnApp)
 
+
+options.forEach((li)=>{
+   li.addEventListener('click',()=> runnApp(li))
+})
 
 
 
@@ -42,13 +43,18 @@ altura.addEventListener('input', runnApp)
 // }
 
 
+function runnApp(li) {
+  let liclass = [...li.classList]
+  console.log(liclass.includes('active'))
+  esCero(base);
+  esCero(altura);
+  
+  isActive(li)
 
 
+}
 
-
-
-function runnApp() {
- 
-  esDiez(base);
-    esDiez(altura);
+  
+function isActive(li){
+    li.classList.remove('active')
 }
